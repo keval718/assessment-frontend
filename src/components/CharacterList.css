@@ -1,0 +1,48 @@
+.navbar{
+    margin-left: 20px;
+}
+.page-title{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: aliceblue;
+    font-weight: 800;
+    text-align: center;
+    font-family: 'Inter';
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0000FF, 0 0 40px #0000FF, 0 0 50px #0000FF, 0 0 60px #0000FF, 0 0 70px #0000FF;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+.title-line{
+    background-color: white;
+    height: 2px;
+    width: 200px;
+    align-items: center;
+}
+.character-container{
+    display: flex;
+    justify-content: center;
+}
+.character-text{
+    font-size: 25px;
+    margin-right: 40px;
+    font-weight: 900;
+}
+.movie-release-date-text{
+    margin-top: 3px;
+}
+.select-form{
+    border-radius: 8px;
+    padding: 2px;
+    margin-right: 40px;
+}
+.film-name-text{
+    font-weight: 900;
+}

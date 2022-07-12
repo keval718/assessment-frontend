@@ -5,8 +5,7 @@ import CharacterList from './CharacterList'
 import { getCharacterRequest } from '../actions/character'
 
 const Home = () => {
-    const character = useSelector(state => state.character.items)
-    console.log(character);
+    const character = useSelector(state => state.character.items);
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getCharacterRequest());

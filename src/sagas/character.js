@@ -28,7 +28,6 @@ function* getMovies(action) {
                     return filmResponse.json()
                 })
             )
-            console.log(films, 'keval fims')
             movieNames.push(films)
         }
         const res = yield call(getMoviesData);

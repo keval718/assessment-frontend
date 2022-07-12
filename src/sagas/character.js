@@ -1,10 +1,11 @@
 import { takeEvery, fork, put, call } from 'redux-saga/effects';
 import * as actions from '../actions/character';
+import { baseURL } from '../config';
 
 function* getCharacters() {
     try {
         let result;
-        yield fetch('https://swapi.dev/api/people/')
+        yield fetch(`${baseURL}/api/people/`)
             .then(response => response.json())
             .then(data => result = data)
         yield put(actions.getCharacterSuccess({
